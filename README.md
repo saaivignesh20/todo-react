@@ -4,6 +4,25 @@ A simple to-do application created using React 18.
 
 **App #1 - This application is part of my React learning journey.**
 
+## Features
+
+1. Add/edit/delete to-do item
+2. Mark as done
+3. Drag-and-drop (upcoming)
+4. Move completed to bottom (upcoming)
+5. Responsive design (upcoming)
+
+## Notes
+
+This application is made as a part of my React learning journey and it covers the following concepts:
+
+1.  React app code-base creation
+2.  Basic component structure
+3.  `useState()` and `useEffect()` hooks
+4.  Using Props in React components
+5.  Utilising local storage for saving data
+6.  Custom CSS design
+
 ## Pre-requisites
 
 This application uses Yarn package manager. So first you'll have to install Yarn for a smoother experience.
@@ -21,14 +40,3 @@ Once Yarn is installed, install the dependencies for this application:
 To run this application, use the following command:
 
     $ yarn start
-
-## Notes
-
-This application is made as a part of my React learning journey and it covers the following concepts:
-
-1.  React app code-base creation
-2.  Basic component structure
-3.  `useState()` and `useEffect()` hooks
-4.  Using Props in React components
-5.  Utilising local storage for saving data
-6.  Custom CSS design
