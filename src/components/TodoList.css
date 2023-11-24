@@ -1,0 +1,124 @@
+.todo-list-container {
+    width: 500px;
+    min-height: 530px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 1px 0px gray;
+}
+
+.todo-item-container {
+    margin: 10px 0;
+    max-height: 400px;
+    padding-right: 10px;
+    overflow: auto;
+}
+
+.todo-empty {
+    text-align: center;
+    font-size: 14px;
+    background: #EAEAEA;
+    padding: 100px 50px;
+    border-radius: 4px;
+}
+
+.todo-list-item {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    pointer-events: painted;
+    border-radius: 4px;
+    padding: 2px 0;
+}
+
+.todo-list-item:hover {
+    background-color: #EAEAEA;
+}
+
+.todo-item-actions {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.todo-list-item:hover .todo-item-actions {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.todo-item-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+}
+
+.todo-item-description {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.todo-list-item .todo-item-checkbox input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+    pointer-events: auto;
+    accent-color: #000;
+}
+
+.todo-list-item .todo-item-description input[type=text] {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    flex: 1;
+    background-color: transparent;
+    pointer-events: auto;
+}
+
+.todo-list-item .todo-item-description input[type=text]:hover {
+    background-color: #EAEAEA;
+}
+
+.done-strike {
+    text-decoration: line-through;
+}
+
+.todo-item-adder {
+    display: flex;
+    align-items: center;
+    color: #808080;
+    user-select: none;
+    line-height: 1;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.todo-item-adder:hover {
+    background-color: #EAEAEA;
+    color: #000;
+}
+
+.todo-add-icon {
+    width: 24px;
+    height: 24px;
+    margin: 4px 6px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.todo-add-text {
+    font-size: 14px;
+    font-weight: 700;
+    font-weight: 700;
+}
+
+.todo-action-button {
+    margin-right: 6px;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
