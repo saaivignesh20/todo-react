@@ -4,6 +4,8 @@ A simple to-do application created using React 18.
 
 **App #1 - This application is part of my React learning journey.**
 
+![App Screenshot](app-screenshot.png)
+
 ## Features
 
 1. Add/edit/delete to-do item

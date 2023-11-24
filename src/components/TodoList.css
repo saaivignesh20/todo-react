@@ -1,6 +1,6 @@
 .todo-list-container {
     width: 500px;
-    min-height: 530px;
+    min-height: 430px;
     padding: 20px;
     background-color: #FFF;
     border-radius: 10px;
@@ -9,7 +9,7 @@
 
 .todo-item-container {
     margin: 10px 0;
-    max-height: 400px;
+    max-height: 300px;
     padding-right: 10px;
     overflow: auto;
 }
