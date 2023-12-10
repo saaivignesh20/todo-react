@@ -10,7 +10,7 @@ A simple to-do application created using React 18.
 
 1. Add/edit/delete to-do item
 2. Mark as done
-3. Drag-and-drop (upcoming)
+3. Drag-and-drop
 4. Move completed to bottom (upcoming)
 5. Responsive design (upcoming)
 
