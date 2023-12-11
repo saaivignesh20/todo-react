@@ -74,6 +74,7 @@ const TodoList = ({ todoList }) => {
                       item={item}
                       updateListItem={updateListItem}
                       deleteListItem={deleteListItem}
+                      addListItem={addListItem}
                     ></TodoListItem>
                   );
                 })
