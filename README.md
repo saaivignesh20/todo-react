@@ -27,6 +27,8 @@ This application is made as a part of my React learning journey and it covers th
 4.  Using Props in React components
 5.  Utilising local storage for saving data
 6.  Custom CSS design
+7.  Using custom components
+8.  `createRef()` to create arbitrary references
 
 ## Pre-requisites
 
