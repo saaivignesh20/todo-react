@@ -12,7 +12,10 @@ A simple to-do application created using React 18.
 2. Mark as done
 3. Drag-and-drop
 4. Move completed to bottom
-5. Responsive design (upcoming)
+5. Add new item on pressing Enter key
+6. Multi-line to-do item
+7. Rich-text (Bold, Italic & Underline)
+8. Responsive design (upcoming)
 
 ## Notes
 

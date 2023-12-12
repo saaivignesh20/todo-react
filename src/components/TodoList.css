@@ -162,3 +162,10 @@
 .disable-pointer {
   pointer-events: none !important;
 }
+
+[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block;
+  color: grey;
+}

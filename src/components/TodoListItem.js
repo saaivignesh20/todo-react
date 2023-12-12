@@ -1,4 +1,4 @@
-import { createRef } from "react";
+import { Component, createRef, useEffect } from "react";
 import { Draggable } from "react-beautiful-dnd";
 import sanitizeHtml from "sanitize-html";
 import ContentEditable from "react-contenteditable";
@@ -6,7 +6,7 @@ import "./TodoList.css";
 
 const TodoListItem = ({ item, index, updateListItem, deleteListItem, addListItem }) => {
   const sanitizeConf = {
-    allowedTags: ["div", "br"],
+    allowedTags: ["div", "br", "b", "i", "u"],
     allowedAttributes: {}
   };
 
@@ -37,6 +37,10 @@ const TodoListItem = ({ item, index, updateListItem, deleteListItem, addListItem
 
   const handleDelete = () => deleteListItem(item);
 
+  useEffect(() => {
+    contentEditableRef.current.focus();
+  }, []);
+
   return (
     <Draggable key={item.id} draggableId={item.id} index={index}>
       {(provided, snapshot) => (
@@ -66,15 +70,8 @@ const TodoListItem = ({ item, index, updateListItem, deleteListItem, addListItem
               onChange={(e) => handleChange(e.target.value)}
               onBlur={sanitize}
               onKeyDown={handleKeyDown}
-            ></ContentEditable>
-            {/* <input
-              type="text"
-              className={item.done ? "done-strike" : ""}
-              defaultValue={item.description}
               placeholder="Enter description"
-              onChange={(e) => handleChange(e.target.value)}
-              onKeyDown={handleKeyDown}
-            /> */}
+            ></ContentEditable>
           </div>
           <div className="todo-item-actions">
             <i className="todo-action-button material-symbols-outlined" title="Delete" onClick={handleDelete}>
